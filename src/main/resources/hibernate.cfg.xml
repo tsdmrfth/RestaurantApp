@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/RestaurantAppSchema</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Line.939017.java</property>
+		<property name="hibernate.connection.pool_size">20</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<!-- Debug features -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">none</property>
+		<!-- Entity mapping -->
+		<mapping class="com.mvc.restaurant.model.domain.impl.Order" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.Employee" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.Expense" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.Product" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.ProductCategory" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.User" />
+		<mapping class="com.mvc.restaurant.model.domain.impl.RestaurantTable" />
+	</session-factory>
+</hibernate-configuration>
