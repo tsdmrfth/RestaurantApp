@@ -162,4 +162,5 @@ public class CashierFrame {
 	public Double getSpendingAmount() {
 		return Double.parseDouble(spendingAmountField.getText());
 	}
+
 }
