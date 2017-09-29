@@ -1,6 +1,3 @@
-// bismillahirrahmanirrahim.
-//habibe polat
-
 package com.mvc.restaurant.controller;
 
 import java.awt.event.ActionEvent;
